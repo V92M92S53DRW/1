@@ -1,0 +1,54 @@
+Задача 4 
+Код, который вы предоставили, решает задачу "Begin1", которая связана с вычислением периметра квадрата. Чтобы решить задачу "Begin4" и найти длину окружности по её диаметру, вы можете внести следующие изменения в вашу программу:
+#include <iostream>
+using namespace std;
+int main()
+{
+    // Декларация переменных
+    double d, L;
+    const double pi = 3.14; // Задаем значение pi
+
+    // Ввод переменной (диаметра окружности)
+    cout << "Enter the diameter of the circle: ";
+    cin >> d;
+
+    // Вычисление длины окружности
+    L = pi * d;
+
+    // Вывод результата
+    cout << "Length of the circle: " << L << endl;
+
+    return 0;
+}
+Этот код позволит вам ввести диаметр окружности, а затем вычислит и выведет её длину, используя значение π, равное 3.14.
+Задача 14
+Чтобы решить задачу "Begin14" и найти добуток длин отрезков AC и BC, вы можете внести следующие изменения в вашу программу:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Декларация переменных
+    double A, B, C, AC, BC, product;
+
+    // Ввод координат точек
+    cout << "Enter the coordinates of point A: ";
+    cin >> A;
+    cout << "Enter the coordinates of point B: ";
+    cin >> B;
+    cout << "Enter the coordinates of point C (between A and B): ";
+    cin >> C;
+
+    // Вычисление длин отрезков AC и BC
+    AC = abs(A - C);
+    BC = abs(B - C);
+
+    // Вычисление произведения длин отрезков AC и BC
+    product = AC * BC;
+
+    // Вывод результата
+    cout << "The product of the lengths of AC and BC is: " << product << endl;
+
+    return 0;
+}
+Этот код позволит вам ввести координаты точек A, B и C на числовой оси, а затем вычислит и выведет произведение длин отрезков AC и BC.
